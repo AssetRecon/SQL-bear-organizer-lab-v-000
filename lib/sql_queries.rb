@@ -20,7 +20,7 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
    #{}"select bears.color, count(bears.color) from bears group by bears.color order by color desc limit 1;"
-   "select count(bears.color) from bears group by bears.color order by color desc limit 1;"
+   "select name, count(bears.color) from bears group by bears.color order by color desc limit 1;"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
